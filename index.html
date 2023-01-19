@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/code-icon.png">
+   <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Estilos CSS -->
+<link rel="stylesheet" href="estilos.css">
+    <!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Animaciones -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/programming-code-signs.png" width="50" alt="Code">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Seccion Principal -->
+    <section class="main align-items-stretch">
+        <div class="main-principal">
+            <img class="main-imagen rounded-circle" src="imagenes/Luchi.jpeg" alt="Foto de Luciano Oviedo">
+            <h1>Hola, Soy Luciano Oviedo</h1>
+            <h2>Desarrollo sitios web y estudio en la Academia Ticmas.</h2>
+        </div>
+        <div class="main-inferior">
+            <img class="main-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="">
+        </div>
+    </section>
+    <!-- Sección sobre mí -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conóceme <button class="leer-mas rounded-circle" id="hideTextBtn"><i id="icon" class="bi bi-dash-circle"></i></button></h2>
+            
+            <div  class="esconder" id="hideText"><p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit feugiat aliquam. Sed dictum fringilla elementum. Maecenas semper non justo eu euismod. Etiam sit amet leo fermentum, cursus mi vitae, consequat elit. Maecenas ultricies odio pretium, placerat sem id, vestibulum dui. Donec tristique, est id facilisis ultrices, est lorem dapibus neque, eget sodales massa lorem in massa. Aenean rhoncus a mauris ac rhoncus. Pellentesque est tortor, tincidunt ut cursus ac, consequat a nisl. Quisque at blandit risus.</p>
+            <a href="#"><button class="btn">Mis proyectos <i class="bi bi-pencil-square"></i></button></a>
+            </div>
+            
+          </div>
+    </section>
+    <!-- Seccion Experiencia -->
+    <section data-aos="fade-up" id="experiencia" class="experiencia seccion-clara">
+        <div class="container text-center"> <h1 class="mb-4">Experiencia</h1>
+            <div class="lista row" id="lista">
+                <!-- Desarrollo Web -->
+               <div class="columna col-12 col-md-4" data-id="1">
+                <i class="bi bi-laptop"></i>
+                <p class="experiencia-titulo">Desarrollo Web</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit feugiat aliquam. Sed dictum fringilla elementum. Maecenas semper non justo eu euismod. Etiam sit amet leo fermentum, cursus mi vitae, consequat elit.</p>
+                <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">HTML</span>
+                    <span class="badge text-bg-primary">CSS</span>
+                    <span class="badge text-bg-primary">Javascript</span>
+                    <span class="badge text-bg-primary">Angular</span>
+                </div>
+                </div>
+                <!-- Estudios -->
+                <div class="columna col-12 col-md-4" data-id="2">
+                    <i class="bi bi-book"></i>
+                    <p class="experiencia-titulo">Estudios</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit feugiat aliquam. Sed dictum fringilla elementum. Maecenas semper non justo eu euismod. Etiam sit amet leo fermentum, cursus mi vitae, consequat elit.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Argentina Programa</span>
+                        <span class="badge text-bg-primary">freeCodeCamp</span>
+                    </div>
+                    </div>
+                 <!-- Proyectos -->
+                 <div class="columna col-12 col-md-4" data-id="3">
+                    <i class="bi bi-rocket-takeoff"></i>
+                    <p class="experiencia-titulo">Proyectos</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit feugiat aliquam. Sed dictum fringilla elementum. Maecenas semper non justo eu euismod. Etiam sit amet leo fermentum, cursus mi vitae, consequat elit.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Github</span>
+                        <span class="badge text-bg-primary">Instagram</span>
+                        <span class="badge text-bg-primary">Twitter</span>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion Habilidades -->
+    <section id="habilidades" class="habilidades" data-aos="fade-up">
+      <div class="container">
+      <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="imagenes/lenguajes.webp" alt="" class="img-thumbnail mb-3" >
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="display-5 my-4">Habilidades</h2>
+        <div class="mb-3">
+          <label> HTML</label>
+          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-warning" style="width: 90%; color: black;">90%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label> CSS</label>
+          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-info" style="width: 85%; color: black;">85%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label> Javascript</label>
+          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-danger" style="width: 85%; color: black;">85%</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+      </div>
+  
+    </section>
+    <!-- Seccion Footer -->
+    <footer data-aos="fade-up" class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img src="imagenes/code-icon.png" alt="" class="footer-logo">
+      <p class="footer-texto text-center">Argentina Programa.<br>Desarrollo FrontEnd.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="" target="_blank"><i class="bi bi-twitter"></i></a>
+      <a href="" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="derechos-autor">Creado por Luciano Oviedo (2022) &#169;</div>
+    </footer>
+
+
+
+
+
+
+    <!-- Drag n Drop -->
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="javascript.js"></script>
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+   
+  </body>
+</html>
